@@ -26,7 +26,7 @@ namespace HouseAutomation
 
         public override string getData()
         {
-            throw new NotImplementedException();
+            return "Name: " + name ;
         }
 
         public void PowerOff()

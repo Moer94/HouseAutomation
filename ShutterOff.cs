@@ -18,7 +18,7 @@ namespace HouseAutomation
         public override void ButtonClick()
         {
             _shutter.SetCurrentState(new ShutterOff(_shutter));
-            Console.WriteLine("Shutter is turend 1Off");
+            Console.WriteLine("Shutter is turend Off");
         }
 
         public override void SensorSignal()
@@ -26,7 +26,7 @@ namespace HouseAutomation
             if (true) //sensed a movement
             {
                 _shutter.SetCurrentState(new ShutterOff(_shutter));
-                Console.WriteLine("Shutter turend off by 1Sensor");
+                Console.WriteLine("Shutter turend off by Sensor");
             }
         }
     }
